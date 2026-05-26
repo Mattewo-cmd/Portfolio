@@ -1,0 +1,129 @@
+.contact-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-card, .formations-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Réseaux Sociaux */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #f8faff;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-item:hover {
+    background: #e67e22;
+    color: white;
+}
+
+/* CV */
+.hidden {
+    display: none;
+}
+
+.btn-cv {
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Formations (Timeline simple) */
+.timeline {
+    border-left: 3px solid #e67e22;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.formation-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.formation-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #e67e22;
+    border-radius: 50%;
+}
+
+.year {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.school {
+    font-style: italic;
+    color: #7f8c8d;
+}
+/* Le conteneur qui englobe TOUT l'aperçu */
+#cvPreview {
+    max-width: 600px; /* Taille idéale pour une lecture confortable */
+    margin: 20px auto; /* Centre le CV horizontalement */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* Pour que les arrondis s'appliquent aussi au contenu */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Si tu utilises une iframe */
+#cvPreview iframe {
+    width: 100%;
+    height: 800px; /* Ajuste la hauteur pour voir une bonne partie du CV */
+    border: none;
+}
+
+/* Si tu as opté pour une image PNG */
+#cvPreview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.download-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #e67e22; /* Ton orange */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
